@@ -2541,6 +2541,8 @@ nav ul li.active>a .fa-chevron-down {
     height: fit-content;
     width: 100%;
     display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
     justify-content: center;
     padding: 50px 10px;
     align-items: center;
@@ -2609,7 +2611,8 @@ nav ul li.active>a .fa-chevron-down {
     background-color: #21863f;
     color: white;
     text-decoration: none;
-    width: 100%;
+    width: 95%;
+    
     text-align: center;
 }
 .blog-landscape-card-image-container{
@@ -2666,10 +2669,10 @@ nav ul li.active>a .fa-chevron-down {
 }
 
 .blog-carousel-btn.prev{
-    left:20px;
+    left:-30px;
 }
 .blog-carousel-btn.next{
-    right:20px;
+    right:-30px;
 }
 @media(max-width:850px){
     .blog-landscape-card-text-container{
@@ -2689,6 +2692,12 @@ nav ul li.active>a .fa-chevron-down {
 .blog-landscape-card-text-container a {
     font-size: small;
 }
+.blog-carousel-btn.prev{
+    left:0px;
+}
+.blog-carousel-btn.next{
+    right:0px;
+}
 }
 @media(max-width:550px){
     .blog-landscape-card {
@@ -2706,6 +2715,7 @@ nav ul li.active>a .fa-chevron-down {
 }
 .blog-carousel-btn{
     top:70%;
+    z-index: 1;
     font-size:25px;
 }
 }
@@ -2746,6 +2756,7 @@ nav ul li.active>a .fa-chevron-down {
     justify-content: center;
     text-decoration: none;
     color: black;
+    border-radius: 10px;
     align-items: center;
     padding: 10px;
     box-shadow: 1px 1px 10px gray;
